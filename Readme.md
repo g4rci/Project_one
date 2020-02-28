@@ -29,7 +29,7 @@ Users data will be obtain from the sign up form and storage in local storage. Th
 Task definition in order of priority
 ### Git
 URls for the project repo and deploy
-[Link Repo](http://github.com)
-[Link Deploy](http://github.com)
+[Link Repo](https://github.com/g4rci/Project_one)
+[Link Deploy](https://github.com/g4rci/Project_one)
 ### Slides
 URls for the project presentation (slides)
