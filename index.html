@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="/api.js"></script>
+    
 </head>
 <body>
 
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Where I see You</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand" href="/index.html">Where I see You</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -22,15 +24,18 @@
                 Dropdown
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Lo gin</a>
-                <a class="dropdown-item" href="#">Sign in</a>
+                <a class="dropdown-item" href="/Login.html">Lo gin</a>
+                <a class="dropdown-item" href="/signIn.html">Sign in</a>
                 <div class="dropdown-divider"></div>
             </div>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            <a href="/movie.html" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
           </form>
         </div>
       </nav>
@@ -45,24 +50,24 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="images/aladdin-accion-real-disney.jpg" class="d-block w-100" alt="...">
+            <img id="movie1" src="images/aladdin-accion-real-disney.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h5 id="title1" >First slide label</h5>
+              <p id="synopsis1" >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+           </div>
+          <div class="carousel-item">
+            <img id="movie2" src="images/avengers-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 id="title2" >Second slide label</h5>
+              <p id="synopsis2" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="images/avengers-3.jpg" class="d-block w-100" alt="...">
+            <img id="movie3" src="images/joker-2019-joaquin-phoenix-clown-5c-1440x808.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/joker-2019-joaquin-phoenix-clown-5c-1440x808.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <h5 id="title3" >Third slide label</h5>
+              <p id="synopsis3" >Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
           </div>
         </div>
