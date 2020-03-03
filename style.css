@@ -1,4 +1,9 @@
 .singin{
-    margin: 5% 10% ;
+    margin: 5% 30% ;
 }
-
+#centerHome{
+    margin-top: 50px;
+}
+#posterApi{
+    height: 300px;
+}
