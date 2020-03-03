@@ -36,10 +36,7 @@ class Validator {
         div.innerHTML = message
         form.insertBefore(div, location)
 
-        // traer todos los form group del formulario
-        //crear un array con esa variable
-        // recorer con un foreach y verificar si uno de estos elementos tiene un hijo en la posicion 1 input con un atributo id que coincida === con el atributo id de location
-        //antes de ese input hacemos el insertBefore
+       
     }
 
     deleteErrors (){
@@ -79,21 +76,3 @@ class SignUpValidator extends Validator {
     }
 }
 
-class LogInValidator extends Validator {
-    constructor (){
-        super();
-    }
-
-    checkEmailInDB (string){
-        if (!userDB){
-            return false
-        }
-        else{
-            userDB.forEach(user => {
-                if (user.email === string){return true}
-            })
-        }
-        return false
-    }
-
-}

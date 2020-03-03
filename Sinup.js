@@ -26,6 +26,7 @@ signUpButton.addEventListener("click", function(event){
     if (checkValidUser()){
         console.log("user registered")
         createUser(userName.value, nickName.value, email.value, password.value)
+        window.location.href = 'index.html'
     };
 });
 
@@ -55,7 +56,7 @@ function checkValidUser() {
         signUpValidator.errorCreator("Las contraseñas no coinciden", formGroupRepeatPassword)
         validUser=false
    }
-    if (!signUpValidator.checkEmailInDB(usersDB)){
+    if(!signUpValidator.checkEmailInDB(usersDB)){
         signUpValidator.errorCreator("Este mail ya existe", formGroupEmail)
         validUser=false
     }
@@ -77,4 +78,17 @@ function createUser (userName, nickName, email, password) {
         usersDB = [newUser]
     }
     localStorage.setItem('users', JSON.stringify(usersDB));
+
+    localStorage.setItem('currentUser', JSON.stringify(newUser));
+};
+
+function createCurrentUser (userName, nickName, email, password) {
+    const currentUser = new currentUser (userName, nickName, email, password)
+
+    if (usersDB){
+        usersDB.push(currentUser);
+    } else {
+        usersDB = [currentUser]
+    }
+    localStorage.getItem('users', JSON.parse(localStorage.getItem('users')));
 };
