@@ -81,14 +81,3 @@ function createUser (userName, nickName, email, password) {
 
     localStorage.setItem('currentUser', JSON.stringify(newUser));
 };
-
-function createCurrentUser (userName, nickName, email, password) {
-    const currentUser = new currentUser (userName, nickName, email, password)
-
-    if (usersDB){
-        usersDB.push(currentUser);
-    } else {
-        usersDB = [currentUser]
-    }
-    localStorage.getItem('users', JSON.parse(localStorage.getItem('users')));
-};
