@@ -7,6 +7,7 @@
 #posterApi{
     height: 300px;
 }
-#navbar-brand{
+.navbar-brand{
     font-size: 30px;
+    font-family: 'Telex', sans-serif;
 }
