@@ -10,7 +10,7 @@ let helloMesage = document.getElementById('hello')
 
 logInButton.addEventListener("click", function(event){
     event.preventDefault();
-    //console.log(currentUserDB)
+    
     
     for (let i=0; i<usersDB.length; i++){
        if (usersDB[i].email === email.value && usersDB[i].password === password.value){
@@ -23,7 +23,7 @@ logInButton.addEventListener("click", function(event){
 
 function createCurrentUser (currentUser) {
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
-    console.log(currentUserDB);
+    console.log(currentUser);
     
 };
 //hello
