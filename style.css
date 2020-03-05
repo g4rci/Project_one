@@ -21,3 +21,17 @@
     margin-left: 2%;
     display: inline-block;
 }
+footer{
+    background-color: grey;
+    width: 100%;
+    margin: 0%;
+    height: 10em;
+}
+footer a{
+    margin-left: 42%;
+    margin-right: 5%;
+    vertical-align: 50%;
+}
+
+
+
