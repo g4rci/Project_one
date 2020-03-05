@@ -17,6 +17,7 @@ function searchMovie(){
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+              <img id="posterApi" src=${posterUrl+movieApi.poster_path} alt="">
               <img id="imgSelected" class="d-block w-100" src=${posterUrl+movieApi.backdrop_path} class="d-block w-100" alt="...">
           </div>
         </div>
@@ -26,7 +27,7 @@ function searchMovie(){
             <h5 id="titleSelected" class="card-title">${movieApi.original_title}</h5>
             <h6 id="espTitle" class="card-subtitle mb-2 text-muted">${movieApi.title}</h6>
             <p id="synopsisSelected" class="card-text">${movieApi.overview}</p>
-            <img id="posterApi" src=${posterUrl+movieApi.poster_path} alt="">
+            
         <div id="iframeContainer" class="embed-responsive embed-responsive-16by9">
                 <iframe id="iframe"  class="embed-responsive-item" src="" ></iframe>
         </div>
