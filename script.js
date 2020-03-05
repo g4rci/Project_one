@@ -38,7 +38,7 @@ function searchMovie(){
         </div>
       </footer>`
         searchTrailer(movieApi)
-        vodFunction()
+        vodFunction(movieApi)
     })
     .catch(err => {
       //console.log(err);
@@ -58,8 +58,8 @@ function searchTrailer (result) {
 });
 }
  
-function vodFunction(){    
-    fetch("https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/idlookup?country=es&source_id=19995&source=tmdb", {
+function vodFunction(res){    
+    fetch(`https://utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com/idlookup?country=es&source_id=${res.id}&source=tmdb`, {
         "method": "GET",
         "headers": {
             "x-rapidapi-host": "utelly-tv-shows-and-movies-availability-v1.p.rapidapi.com",
