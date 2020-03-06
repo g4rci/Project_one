@@ -71,7 +71,7 @@ function vodFunction(res){
         let divVod = document.getElementById('divVod')
         divVod.innerHTML = ""
         data.collection.locations.forEach((el) => {
-          divVod.innerHTML += `<a href="${el.url}"><img id="vodLogo" src="${el.icon}" alt=""></a>`
+          divVod.innerHTML += `<a href=${el.url} target="_blank"><img id="vodLogo" src="${el.icon}" alt=""></a>`
         })
         
     })
